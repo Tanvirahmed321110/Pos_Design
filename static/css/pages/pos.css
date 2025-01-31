@@ -1,0 +1,236 @@
+/*________________________________
+______||   Header Here   ||_______
+__________________________________*/
+.header {
+    background-color: var(--white);
+    padding: 10px 20px;
+    height: 62px;
+    box-shadow: var(--shadow-1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header i {
+    font-size: var(--fs-lg);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100dvb;
+    overflow: hidden;
+}
+
+
+/*______  Header Nav ______*/
+.header-nav i {
+    font-size: var(--fs-md);
+}
+
+
+.header-nav .header-nav-btn.active {
+    color: var(--primary-color);
+}
+
+.header-nav .header-nav-btn:hover {
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+.header .profile-img-lg:hover {
+    outline: 2px solid var(--after);
+}
+
+
+
+/*__________________________________
+______||   Right Sidebar   ||_______
+___________________________________*/
+.right-sidebar {
+    position: fixed;
+    top: 62px;
+    right: 0;
+    width: 430px;
+    background-color: var(--white);
+    height: calc(100dvh - 62px);
+    box-shadow: var(--shadow-1);
+    border-top: 1px solid var(--border-color);
+
+}
+
+.right-sidebar-area {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*______  Buy Products ______*/
+.buy-products img {
+    width: 44px;
+}
+
+.buy-products .item-name {
+    width: 180px;
+    text-align: left;
+}
+
+.buy-products .item {
+    padding: 4px 12px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    border-left: 1px solid transparent;
+}
+
+.buy-products .item:hover {
+    background-color: var(--border-color);
+    border-left: 1px solid var(--white);
+}
+
+.buy-products-area {
+    height: calc(100dvh - 504px);
+    overflow-y: auto;
+}
+
+
+/*_______ calculator-total _______*/
+.calculator-total {
+    height: 434px;
+}
+
+
+.buy-products-total li {
+    padding: 4px 12px;
+}
+
+.buy-products-total li h6 {
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.calculator .head button {
+    padding: 18px 14px;
+    background-color: var(--border-color);
+    border-radius: 5px;
+    font-size: var(--fs-md);
+    font-weight: var(--fw-600);
+}
+
+.calculator .body button {
+    background-color: gainsboro;
+    padding: 14px;
+    font-size: var(--fs-lg);
+    border-radius: 5px;
+    font-weight: var(--fw-600);
+}
+
+.calculator .payment-btn {
+    width: 100%;
+    background-color: var(--gray);
+    padding: 18px;
+    border-radius: 6px;
+    color: var(--white);
+    font-size: var(--fs-lg);
+    transition: .25s linear;
+}
+
+.calculator .target-btn.active {
+    border: 1px solid var(--gray2);
+    background-color: var(--gray2);
+}
+
+.calculator button:hover {
+    background-color: var(--border-color2);
+}
+
+.calculator .body .plus-minus {
+    background-color: green;
+    color: var(--white);
+}
+
+.calculator .body .close {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.calculator .body .point {
+    background-color: khaki;
+}
+
+.calculator .payment-btn:hover {
+    opacity: .8;
+    background-color: var(--gray);
+}
+
+
+
+
+
+/*______________________________
+______||   Main Body   ||_______
+_______________________________*/
+
+.main-body {
+    height: calc(100dvh - 68px);
+    width: calc(100% - 476px);
+    margin: 24px;
+    margin-top: 76px;
+}
+
+.main-body .body-top {
+    background-color: var(--white);
+    height: 80px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.main-body .body-top input {
+    width: 360px;
+    padding: 14px;
+    border-radius: 12px;
+    border-color: var(--border-color2);
+}
+
+
+
+
+
+
+/*_____  Main body Products ______ */
+.product-wrapper {
+    height: 1000px;
+    max-height: 3000px;
+}
+
+.main-body .products {
+    padding-bottom: 142px;
+    height: 545px;
+    overflow-y: auto;
+}
+
+.main-body .product {
+    cursor: pointer;
+    position: relative;
+}
+
+.main-body .product .qty {
+    position: absolute;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--gray);
+    color: var(--white);
+    font-weight: 600;
+    z-index: 2;
+}
+
+.main-body .product img {
+    width: 100%;
+    height: 120px;
+}

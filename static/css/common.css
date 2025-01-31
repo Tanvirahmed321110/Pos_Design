@@ -1,0 +1,400 @@
+@import url('./variable.css');
+@import url('./custom_class.css');
+@import url('./component.css');
+
+
+/*_____________________________
+
+        Header Start Here
+______________________________*/
+.header-top {
+    padding: 0;
+    color: var(--border-color);
+    background-color: var(--secondary-hover);
+}
+
+.header-top .my-container {
+    padding: 8px 16px;
+}
+
+.header-top ul li a {
+    padding: 2px 0;
+    color: var(--border-color);
+}
+
+.header-top ul li a:hover {
+    text-decoration: underline;
+    color: var(--border-color2);
+}
+
+
+
+
+
+
+
+/*_________________  Header Medile  _________________*/
+.header-medile {
+    background-color: var(--secondary-color)
+}
+
+.header-medile-area {
+    display: grid;
+    grid-template-columns: 58% 40%;
+    gap: 2%;
+}
+
+.search .subcribe {
+    width: 560px;
+    position: relative;
+    padding: 2px;
+    padding-left: 6px;
+}
+
+.header-medile .subcribe button {
+    background: unset;
+    background-color: var(--secondary-color);
+    top: 0 !important;
+    color: var(--border-color);
+}
+
+.header-medile .subcribe button:hover {
+    background-color: var(--secondary-hover);
+}
+
+.header-medile .right i {
+    color: var(--white-off) !important;
+}
+
+.header-medile .right .icon {
+    width: 40px;
+    color: gainsboro;
+    border: 1px solid var(--white-off);
+    height: 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.header-medile .build {
+    background: linear-gradient(270deg, #016bf8, #0f3f83);
+    background-size: 200% 200%;
+    animation: built-btn-animation 2s linear infinite;
+    border-radius: 8px;
+    width: 180px;
+    word-wrap: normal;
+    text-wrap: nowrap;
+    color: var(--border-color);
+    padding: 2px;
+}
+
+.header-medile .build .my-btn:hover {
+    background-color: var(--secondary-hover);
+}
+
+.header-medile .right .build-btn {
+    /* Full viewport height */
+    /* Make it large for smooth movement */
+}
+
+
+
+
+/*_________________  header medile bottom  ____________________*/
+.header-medile-bottom .item a {
+    font-size: var(--fs-sm);
+    color: var(--border-color);
+    position: relative;
+    padding: 0px 2px;
+}
+
+.header-medile-bottom .item a::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 0%;
+    height: 1px;
+    background-color: var(--border-color2);
+    transition: .2s linear;
+}
+
+.header-medile-bottom .item a:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+.hero-area {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 28px;
+}
+
+/*___________________    Hero Category ___________________  */
+.hero-area .all-department-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 14px 18px;
+    font-size: var(--fs-lg);
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+
+.hero-area .my-nav-item {
+    font-size: var(--fs-sm) !important;
+}
+
+.hero-area .my-nav-item .my-dropdown li {
+    color: var(--gray);
+    font-size: var(--fs-sm) !important;
+    font-weight: var(--fw-500);
+}
+
+.hero-area .my-nav-item .my-dropdown li:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.hero-area .my-nav-item .my-dropdown li a {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*_______  all-department  _______*/
+.hero-area .all-department {
+    width: 100%;
+    overflow: auto;
+    min-height: 480px;
+}
+
+.all-department.my-card {
+    padding: 6px 0px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    overflow: unset;
+}
+
+.hero-area .all-department .wrapper::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+
+.hero-area .all-department .wrapper::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: var(--border-color2);
+}
+
+.hero-area .all-department .wrapper:hover::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+
+.hero-area .all-department .single-dept {
+    cursor: pointer;
+    padding: 4px 0;
+    padding: 6px 16px;
+    border-radius: 2px;
+}
+
+.hero-area .my-dropdown li {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 3px;
+}
+
+
+.hero-area .my-dropdown li:hover a {
+    color: var(--primary-color)
+}
+
+/* dropdown */
+
+.all-department .dropdown {
+    opacity: 0;
+    position: absolute;
+    left: 100%;
+    width: fit-content;
+    text-wrap: nowrap;
+    top: -4px;
+    background-color: var(--white);
+    padding: 14px 0;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--border-color);
+    visibility: hidden;
+    transform: translateX(-25px);
+    transition: .2s linear;
+    z-index: -1;
+    min-width: 250px;
+    max-height: 200px !important;
+    max-width: 400px;
+    width: 100%;
+}
+
+.all-department .dropdown .col {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.all-department .dropdown li {
+    position: relative;
+}
+
+.all-department .dropdown li a {
+    padding: 2px 0;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-500);
+}
+
+.all-department li i {
+    font-size: var(--fs-xs);
+}
+
+
+/* without home  page */
+.all-department.other-page {
+    display: none;
+}
+
+.hover:hover .all-department.other-page {
+    display: block;
+    z-index: 4;
+}
+
+
+.all-department-btn:hover .all-department.other-page {
+    display: block;
+}
+
+
+.all-department li:hover>.dropdown {
+    opacity: 1;
+    top: -4px;
+    max-height: 2000px;
+    display: flex;
+    transform: translateX(0);
+    transition: .2s linear;
+    visibility: visible;
+    z-index: 12;
+}
+
+.all-department .dropdown li a:hover {
+    color: var(--primary-color);
+}
+
+.all-department .dropdown .col li {
+    padding: 4px 16px;
+    font-size: var(--fs-sm);
+    font-weight: 500;
+}
+
+.all-department .dropdown li i {
+    font-size: 11px;
+}
+
+.all-department .dropdown .col li:hover {
+    background-color: var(--white-off);
+    width: 100%;
+}
+
+/* single deprt */
+.all-department .single-dept.my-dropdown-parent .my-dropdown {
+    left: 100%;
+    z-index: 5;
+}
+
+.hero-area .all-department .single-dept p {
+    font-weight: 500;
+    font-size: var(--fs-sm);
+}
+
+.hero-area .all-department .single-dept::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 0px;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: .2s linear;
+}
+
+.hero-area .all-department .single-dept:hover::after {
+    width: 4px;
+    left: 0;
+}
+
+.hero-area .all-department .single-dept:hover {
+    background-color: var(--white-off);
+}
+
+.hero-area .all-department-btn i {
+    font-size: var(--fs-lg);
+}
+
+
+
+
+
+
+/*___________________    Hero Banner ___________________  */
+
+/* special-offer */
+.special-offer .item {
+    height: 180px;
+    background-color: rgb(212, 208, 208);
+    border-radius: 8px;
+    background-image: url('https://img.freepik.com/free-photo/laptop-wooden-table-with-timer_53876-94694.jpg?t=st=1738058092~exp=1738061692~hmac=fd765e7ce9c147eeab5ffb8c1a5bb4b636b67185c0090c5e2290880cd049be10&w=1060');
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.special-offer .item:nth-child(2) {
+    background-image: url('https://img.freepik.com/free-vector/adenovirus-computer-screen_1308-47608.jpg?t=st=1738058581~exp=1738062181~hmac=f5a3c9dc5f34b9d4d76090e32e2c8f252503e6e5cee8698b2192ff5227b32968&w=996');
+}
+
+.special-offer .item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 11, 11, 0.465);
+}
+
+.special-offer .content {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
+    flex-direction: column;
+    color: var(--white);
+    position: relative;
+    z-index: 2;
+    width: 80%;
+}
+
+.special-offer .content h4 {
+    color: var(--white);
+}
