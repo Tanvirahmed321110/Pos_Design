@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>POS</title>
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./static/css/common.css">
         <link rel="stylesheet" href="./static/css/pages/pos.css">
     </head>
@@ -319,12 +321,52 @@
 
                 <!--______ Category ______ -->
                 <div class="body-top my-shadow-1 my-flex-between">
-                    <div class="category">
-                        <div class="category-wrapper">
-                            <div class="slide">
-                                hello
+                    <div class="category ">
+                        <div class="swiper category-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- single slide -->
+                                <div class="swiper-slide">
+                                    <div class="my-card my-flex-center my-gap-3">
+                                        <img src="./static/images/Acoustic Bloc Screens.png">
+                                        <h5>Baby Items</h5>
+                                    </div>
+                                </div>
+                                <!-- single slide -->
+                                <div class="swiper-slide">
+                                    <div class="my-card my-flex-center my-gap-3">
+                                        <img src="./static/images/Acoustic Bloc Screens.png">
+                                        <h5>Baby Items</h5>
+                                    </div>
+                                </div>
+                                <!-- single slide -->
+                                <div class="swiper-slide">
+                                    <div class="my-card my-flex-center my-gap-3">
+                                        <img src="./static/images/Conference Chair.png">
+                                        <h5>Baby Items</h5>
+                                    </div>
+                                </div>
+                                <!-- single slide -->
+                                <div class="swiper-slide">
+                                    <div class="my-card my-flex-center my-gap-3">
+                                        <img src="./static/images/Drawer.jpg">
+                                        <h5>Instand Food</h5>
+                                    </div>
+                                </div>
+                                <!-- single slide -->
+                                <div class="swiper-slide">
+                                    <div class="my-card my-flex-center my-gap-2">
+                                        <img src="./static/images/Conference Chair.png">
+                                        <h5>Home Decor</h5>
+                                    </div>
+                                </div>
                             </div>
+
+                            <!-- Navigation Buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
+
                     </div>
 
 
@@ -745,6 +787,45 @@
 
 
         </div>
+
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".category-slider", {
+                loop: true,
+                autoplay: {
+                    delay: 4000, // Wait time before next slide
+                    disableOnInteraction: false,
+                },
+                speed: 1200, // Slide transition speed
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 25,
+                    }
+                }
+            });
+
+        </script>
+
     </body>
 
 </html>

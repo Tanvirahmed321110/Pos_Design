@@ -184,8 +184,8 @@ _______________________________*/
 
 .main-body .body-top {
     background-color: var(--white);
-    height: 80px;
-    padding: 12px;
+    height: 90px;
+    padding: 8px;
     border-radius: 8px;
 }
 
@@ -198,6 +198,35 @@ _______________________________*/
 
 
 
+
+/* category-slider */
+.category {
+    width: calc(100% - 385px);
+    user-select: none;
+}
+
+.category .my-card {
+    padding: 6px;
+    background-color: var(--border-color);
+}
+
+.category img {
+    width: 58px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 16px;
+    font-weight: 700 !important;
+    width: 28px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
 
 
 
