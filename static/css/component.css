@@ -2289,8 +2289,9 @@ ___________________________________*/
     width: 20px;
     height: 20px;
     background-color: var(--primary-color);
-    transition: .3s;
+    transition: .26s linear;
     clip-path: polygon(0 0, 0% 100%, 75% 48%);
+    z-index: 2;
     /* Triangular point */
 }
 

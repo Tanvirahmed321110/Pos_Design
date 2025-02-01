@@ -196,7 +196,7 @@ _______________________________*/
 
 
 
-/* category-slider */
+/*_________ category slider ________*/
 .category {
     width: calc(100% - 385px);
     user-select: none;
@@ -205,6 +205,7 @@ _______________________________*/
 .category .my-card {
     padding: 6px;
     background-color: var(--border-color);
+    cursor: pointer;
 }
 
 .category img {
@@ -269,7 +270,7 @@ _______________________________*/
 
 
 
-
+/*_________ Three Dot Modal ________*/
 .three-dot-modal .modal-content,
 .note-modal .modal-content {
     padding: 20px;
@@ -293,7 +294,7 @@ _______________________________*/
 
 
 
-
+/*_________ Note Modal ________*/
 .note-modal .modal-content {
     min-width: 800px;
 }
@@ -321,7 +322,7 @@ _______________________________*/
 
 
 
-/* customers-modal */
+/*_________ Customers Modal ________*/
 .customers-modal .table-wrapper {
     min-height: 500px;
     height: 400px;
@@ -330,10 +331,15 @@ _______________________________*/
     position: relative;
 }
 
+.customers-modal .customer-search {
+    border-radius: 12px;
+    padding: 14px;
+}
 
 
 .customers-modal table th {
     padding: 18px 6px;
+    padding-left: 12px;
     color: var(--secondary-color);
     box-shadow: var(--shadow-1);
     background-color: var(--secondary-color);
@@ -352,4 +358,29 @@ _______________________________*/
 
 .customers-modal table tbody tr:nth-child(even) {
     background-color: var(--border-color);
+}
+
+
+/* action dropdonn */
+.customers-modal .action-dropdown {
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    background-color: var(--white);
+    box-shadow: var(--shadow-2);
+    z-index: 18;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    min-width: 120px;
+    border-radius: 4px;
+    display: none;
+}
+
+.customers-modal .action-dropdown.active {
+    display: flex;
+}
+
+.customers-modal .action-dropdown button {
+    font-size: 13px;
+    text-align: left;
 }
