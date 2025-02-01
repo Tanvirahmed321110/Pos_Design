@@ -261,11 +261,12 @@
                         <div class="calculator my-p-2 my-border-top">
                             <div class="head my-flex-between">
                                 <div class="my-d-flex my-align-center my-gap-2">
-                                    <Button>Customer</Button>
-                                    <Button>Note</Button>
+                                    <Button id="customers-modal-open">Customer</Button>
+                                    <Button id="note-modal-open">Note</Button>
                                 </div>
                                 <div>
-                                    <button>..</button>
+                                    <button class="three-dot" id="three-dot-modal-open"><span><i
+                                                class="fa-solid fa-ellipsis-vertical"></i></span></button>
                                 </div>
                             </div>
 
@@ -784,15 +785,389 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
+
+
+
+
+        <!--______________________________________
+        _____||    Modal For Three Dot    ||______
+        __________________________________________
+        -->
+        <div class="my-modal three-dot-modal" id="three-dot-modal">
+            <div class="modal-content ">
+                <button class="modal-close-btn my-primary-btn"><i class="fa-solid fa-xmark"></i></button>
+                <div class="my-py-3">
+                    <h4>Action</h4>
+                </div>
+
+                <div class="my-border-top my-grid-3 my-pt-3 my-gap-3">
+                    <div class="my-card my-flex-center my-gap-2">
+                        <span><i class="fa-solid fa-note-sticky"></i></span>
+                        <h5>Customer Note</h5>
+                    </div>
+                    <div class="my-card my-flex-center my-gap-2">
+                        <span><i class="fa-solid fa-cart-arrow-down"></i></span>
+                        <h5>Quotation/Orders</h5>
+                    </div>
+                    <div class="my-card my-flex-center my-gap-2">
+                        <span><i class="fa-solid fa-list-ul"></i></span>
+                        <h5>Pricelist</h5>
+                    </div>
+                    <div class="my-card my-flex-center my-gap-2">
+                        <span><i class="fa-solid fa-rotate-left"></i></span>
+                        <h5>Refun</h5>
+                    </div>
+                    <div class="my-card my-flex-center my-gap-2">
+                        <span><i class="fa-solid fa-trash-can"></i></span>
+                        <h5>Cancel Order</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--______________________________________
+        _____||    Modal For Note    ||______
+        __________________________________________
+        -->
+        <div class="my-modal note-modal " id="note-modal">
+            <div class="modal-content">
+                <button class="modal-close-btn my-primary-btn"><i class="fa-solid fa-xmark"></i></button>
+                <div class="my-py-3">
+                    <h4>Add Note</h4>
+                </div>
+
+
+                <!-- Tags -->
+                <div class="my-border-top my-pt-3 my-d-flex my-align-center my-gap-2">
+                    <div class="my-card active">Wait</div>
+                    <div class="my-card">To Serve</div>
+                    <div class="my-card">Emergency</div>
+                    <div class="my-card">No Dressing</div>
+                </div>
+
+
+                <!-- Note Textarea -->
+                <div class="my-input-control my-mt-3 my-pt-2">
+                    <textarea name="" class="note-modal-textarea"></textarea>
+                </div>
+
+                <!-- Bottom Save Button -->
+                <div class="my-mt-3 my-d-flex my-align-center my-gap-2">
+                    <button class="my-btn my-primary-btn">Save</button>
+                    <button class="my-btn my-btn-outline">Discrad</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--__________________________________________
+            _____||    Modal For Customers    ||______
+            __________________________________________
+        -->
+        <div class="my-modal customers-modal active" id="customers-modal">
+            <div class="modal-content big">
+                <button class="modal-close-btn my-primary-btn"><i class="fa-solid fa-xmark"></i></button>
+                <div class="my-py-2">
+                    <h4>Customers List</h4>
+
+                    <!-- Top -->
+                    <div class="my-mt-2 my-flex-between ">
+                        <button class="my-btn my-secendary-btn">Create</button>
+                        <div class="max-450 my-input-control">
+                            <input type="search" placeholder="Search Customer">
+                        </div>
+                    </div>
+
+
+                    <div class="my-p-relative table-wrapper  my-mt-3 my-has-scrollbar">
+                        <table class="my-w-100 my-table  my-text-left">
+                            <thead>
+                                <tr>
+                                    <th>Name </th>
+                                    <th>Address</th>
+                                    <th>Contact</th>
+                                    <th>Date</th>
+                                    <th class="my-text-center">Active</th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="table-body ">
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Tanvir Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6> Ahmed</h6>
+                                    </td>
+                                    <td>
+                                        <p>Mirpur Block A,</p>
+                                        <p>Dhaka </p>
+                                    </td>
+                                    <td>
+                                        0156623812382
+                                    </td>
+                                    <td>
+                                        <p>23 Feb 2024 <span>12.2PM</span></p>
+                                    </td>
+                                    <td class="my-text-center">
+                                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
 
 
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-        <script>
+        <script type="module">
+            import { closeModalF, openModalF, activeAndRemoveF, textPastF } from './static/js/utilitis.js' // Adjust path if needed
+
+            // clsoe modal
+            closeModalF()
+
+            // for three dot modal
+            openModalF('three-dot-modal', 'three-dot-modal-open')
+
+            // for note modal
+            openModalF('note-modal', 'note-modal-open')
+            activeAndRemoveF('.note-modal .my-card')
+            textPastF(".note-modal .my-card", ".note-modal-textarea");
+
+
+            // for customer modal
+            openModalF('customers-modal', 'customers-modal-open')
+
+
+            // For Category slider
             var swiper = new Swiper(".category-slider", {
                 loop: true,
                 autoplay: {
@@ -823,6 +1198,8 @@
                     }
                 }
             });
+
+
 
         </script>
 

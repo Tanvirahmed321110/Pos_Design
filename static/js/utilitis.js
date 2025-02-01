@@ -11,16 +11,19 @@ export function openModalF(modalId, btnId) {
 
 
 // Close Modal Function
-export function closeButtonF(modalId) {
-    const closeButtons = document.querySelectorAll('.close-btn')
-    const modal = document.getElementById(modalId)
+export function closeModalF() {
+    const closeButtons = document.querySelectorAll('.modal-close-btn');
 
     closeButtons.forEach(btn => {
         btn.addEventListener('click', function () {
-            modal.classList.remove('active')
-        })
-    })
+            const modal = btn.closest('.my-modal'); // Find the closest modal to the clicked button
+            if (modal) {
+                modal.classList.remove('active');
+            }
+        });
+    });
 }
+
 
 
 // Sidebar toggle function
@@ -157,6 +160,44 @@ export function activeF(selector) {
     })
 }
 
+
+
+// Active and Unactive
+export function activeAndRemoveF(selector) {
+    const items = document.querySelectorAll(selector);
+
+    items.forEach(item => {
+        item.addEventListener('click', function () {
+            item.classList.toggle('active');
+        });
+    });
+}
+
+
+
+// Text Paste in Input
+export function textPastF(selector, textareaSelector) {
+    const items = document.querySelectorAll(selector);
+    const textarea = document.querySelector(textareaSelector);
+
+    // Initialize textarea with the text of active items
+    items.forEach(item => {
+        if (item.classList.contains('active')) {
+            textarea.value += item.innerText + '\n';
+        }
+    });
+
+    // Add or remove text when clicking
+    items.forEach(item => {
+        item.addEventListener('click', function () {
+            if (item.classList.contains('active')) {
+                textarea.value += item.innerText + '\n';
+            } else {
+                textarea.value = textarea.value.replace(item.innerText + '\n', '');
+            }
+        });
+    });
+}
 
 
 
