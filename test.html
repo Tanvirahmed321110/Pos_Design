@@ -1,0 +1,396 @@
+<!--______________________________________
+        _____||    Modal For Three Dot    ||______
+        __________________________________________
+        -->
+<div class="my-modal three-dot-modal " id="three-dot-modal">
+    <div class="modal-content ">
+        <button class="modal-close-btn "><i class="fa-solid fa-xmark"></i></button>
+        <div class="my-py-3">
+            <h4>Action</h4>
+        </div>
+
+        <div class="my-border-top my-grid-3 my-pt-3 my-gap-3">
+            <div class="my-card my-flex-center my-gap-2">
+                <span><i class="fa-solid fa-note-sticky"></i></span>
+                <h5>Customer Note</h5>
+            </div>
+            <div class="my-card my-flex-center my-gap-2">
+                <span><i class="fa-solid fa-cart-arrow-down"></i></span>
+                <h5>Quotation/Orders</h5>
+            </div>
+            <div class="my-card my-flex-center my-gap-2">
+                <span><i class="fa-solid fa-list-ul"></i></span>
+                <h5>Pricelist</h5>
+            </div>
+            <div class="my-card my-flex-center my-gap-2">
+                <span><i class="fa-solid fa-rotate-left"></i></span>
+                <h5>Refun</h5>
+            </div>
+            <div class="my-card my-flex-center my-gap-2">
+                <span><i class="fa-solid fa-trash-can"></i></span>
+                <h5>Cancel Order</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--______________________________________
+        _____||    Modal For Open Cash    ||______
+        __________________________________________
+        -->
+<div class="my-modal open-cash-modal " id="open-cash-modal">
+    <div class="modal-content ">
+        <button class="modal-close-btn "><i class="fa-solid fa-xmark"></i></button>
+        <div class="my-py-3">
+            <h4>Action</h4>
+        </div>
+
+        <div class="my-border-top my-grid-3 my-pt-3 my-gap-3">
+            <div class="my-card my-flex-center my-gap-2">
+                <span><i class="fa-solid fa-note-sticky"></i></span>
+                <h5>Customer Note</h5>
+            </div>
+            <div class="my-card my-flex-center my-gap-2">
+                <span><i class="fa-solid fa-cart-arrow-down"></i></span>
+                <h5>Quotation/Orders</h5>
+            </div>
+            <div class="my-card my-flex-center my-gap-2">
+                <span><i class="fa-solid fa-list-ul"></i></span>
+                <h5>Pricelist</h5>
+            </div>
+            <div class="my-card my-flex-center my-gap-2">
+                <span><i class="fa-solid fa-rotate-left"></i></span>
+                <h5>Refun</h5>
+            </div>
+            <div class="my-card my-flex-center my-gap-2">
+                <span><i class="fa-solid fa-trash-can"></i></span>
+                <h5>Cancel Order</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--______________________________________
+        _____||    Modal For Note    ||______
+        __________________________________________
+        -->
+<div class="my-modal note-modal " id="note-modal">
+    <div class="modal-content ">
+        <button class="modal-close-btn "><i class="fa-solid fa-xmark"></i></button>
+        <div class="my-py-3">
+            <h4>Opening Control</h4>
+        </div>
+
+
+        <div class="my-mt-2 ">
+            <p>Openning cash</p>
+            <div class="my-input-control my-d-flex my-gap-2 my-align-center">
+                <input type="number" placeholder="Openning Balance">
+                <span class="my-d-flex cash-icon my-p-2 my-radius-sm my-bg-white-off"><i
+                        class="fa-solid fa-money-bill-1"></i></span>
+            </div>
+        </div>
+
+
+        <!-- Note Textarea -->
+        <div class="my-input-control my-mt-3 my-pt-2">
+            <textarea name="" class="note-modal-textarea" placeholder="Openning Note"></textarea>
+        </div>
+
+        <!-- Bottom Save Button -->
+        <div class="my-mt-3 my-d-flex my-align-center my-gap-2">
+            <button class="my-btn my-primary-btn">Open Register</button>
+            <button class="my-btn my-btn-outline">Close</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--__________________________________________
+            _____||    Modal For Customers    ||______
+            __________________________________________
+        -->
+<div class="my-modal customers-modal  " id="customers-modal">
+    <div class="modal-content big">
+        <button class="modal-close-btn "><i class="fa-solid fa-xmark"></i></button>
+        <div class="my-py-2">
+            <h4>Customers List</h4>
+
+            <!-- Top -->
+            <div class="my-mt-2 my-flex-between ">
+                <button class="my-btn my-secendary-btn">Create</button>
+                <div class="max-450 my-input-control">
+                    <input type="search" class="customer-search" placeholder="Search Customer">
+                </div>
+            </div>
+
+
+            <div class="my-p-relative table-wrapper  my-mt-3 my-has-scrollbar">
+                <table class="my-w-100 my-table  my-text-left">
+                    <thead>
+                        <tr>
+                            <th>Name </th>
+                            <th>Address</th>
+                            <th>Contact</th>
+                            <th>Date</th>
+                            <th class="my-text-center">Active</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table-body ">
+                        <tr>
+                            <td>
+                                <h6>Tanvir Ahmed</h6>
+                            </td>
+                            <td>
+                                <p>Mirpur Block A,</p>
+                                <p>Dhaka </p>
+                            </td>
+                            <td>
+                                0156623812382
+                            </td>
+                            <td>
+                                <p>23 Feb 2024 <span>12.2PM</span></p>
+                            </td>
+                            <td class="my-text-center my-p-relative">
+                                <button class="action my-p-2"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                                <div class="action-dropdown my-flex-column my-gap-2">
+                                    <button>Edit Details</button>
+                                    <button>All Order</button>
+                                    <button>Deposit Money</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Tanvir Ahmed</h6>
+                            </td>
+                            <td>
+                                <p>Mirpur Block A,</p>
+                                <p>Dhaka </p>
+                            </td>
+                            <td>
+                                0156623812382
+                            </td>
+                            <td>
+                                <p>23 Feb 2024 <span>12.2PM</span></p>
+                            </td>
+                            <td class="my-text-center my-p-relative">
+                                <button class="action my-p-2"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                                <div class="action-dropdown my-flex-column my-gap-2">
+                                    <button>Edit Details</button>
+                                    <button>All Order</button>
+                                    <button>Deposit Money</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Tanvir Ahmed</h6>
+                            </td>
+                            <td>
+                                <p>Mirpur Block A,</p>
+                                <p>Dhaka </p>
+                            </td>
+                            <td>
+                                0156623812382
+                            </td>
+                            <td>
+                                <p>23 Feb 2024 <span>12.2PM</span></p>
+                            </td>
+                            <td class="my-text-center my-p-relative">
+                                <button class="action my-p-2"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                                <div class="action-dropdown my-flex-column my-gap-2">
+                                    <button>Edit Details</button>
+                                    <button>All Order</button>
+                                    <button>Deposit Money</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Tanvir Ahmed</h6>
+                            </td>
+                            <td>
+                                <p>Mirpur Block A,</p>
+                                <p>Dhaka </p>
+                            </td>
+                            <td>
+                                0156623812382
+                            </td>
+                            <td>
+                                <p>23 Feb 2024 <span>12.2PM</span></p>
+                            </td>
+                            <td class="my-text-center my-p-relative">
+                                <button class="action my-p-2"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                                <div class="action-dropdown my-flex-column my-gap-2">
+                                    <button>Edit Details</button>
+                                    <button>All Order</button>
+                                    <button>Deposit Money</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Tanvir Ahmed</h6>
+                            </td>
+                            <td>
+                                <p>Mirpur Block A,</p>
+                                <p>Dhaka </p>
+                            </td>
+                            <td>
+                                0156623812382
+                            </td>
+                            <td>
+                                <p>23 Feb 2024 <span>12.2PM</span></p>
+                            </td>
+                            <td class="my-text-center my-p-relative">
+                                <button class="action my-p-2"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                                <div class="action-dropdown my-flex-column my-gap-2">
+                                    <button>Edit Details</button>
+                                    <button>All Order</button>
+                                    <button>Deposit Money</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Tanvir Ahmed</h6>
+                            </td>
+                            <td>
+                                <p>Mirpur Block A,</p>
+                                <p>Dhaka </p>
+                            </td>
+                            <td>
+                                0156623812382
+                            </td>
+                            <td>
+                                <p>23 Feb 2024 <span>12.2PM</span></p>
+                            </td>
+                            <td class="my-text-center my-p-relative">
+                                <button class="action my-p-2"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                                <div class="action-dropdown my-flex-column my-gap-2">
+                                    <button>Edit Details</button>
+                                    <button>All Order</button>
+                                    <button>Deposit Money</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Tanvir Ahmed</h6>
+                            </td>
+                            <td>
+                                <p>Mirpur Block A,</p>
+                                <p>Dhaka </p>
+                            </td>
+                            <td>
+                                0156623812382
+                            </td>
+                            <td>
+                                <p>23 Feb 2024 <span>12.2PM</span></p>
+                            </td>
+                            <td class="my-text-center my-p-relative">
+                                <button class="action my-p-2"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                                <div class="action-dropdown my-flex-column my-gap-2">
+                                    <button>Edit Details</button>
+                                    <button>All Order</button>
+                                    <button>Deposit Money</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Tanvir Ahmed</h6>
+                            </td>
+                            <td>
+                                <p>Mirpur Block A,</p>
+                                <p>Dhaka </p>
+                            </td>
+                            <td>
+                                0156623812382
+                            </td>
+                            <td>
+                                <p>23 Feb 2024 <span>12.2PM</span></p>
+                            </td>
+                            <td class="my-text-center my-p-relative">
+                                <button class="action my-p-2"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                                <div class="action-dropdown my-flex-column my-gap-2">
+                                    <button>Edit Details</button>
+                                    <button>All Order</button>
+                                    <button>Deposit Money</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Tanvir Ahmed</h6>
+                            </td>
+                            <td>
+                                <p>Mirpur Block A,</p>
+                                <p>Dhaka </p>
+                            </td>
+                            <td>
+                                0156623812382
+                            </td>
+                            <td>
+                                <p>23 Feb 2024 <span>12.2PM</span></p>
+                            </td>
+                            <td class="my-text-center my-p-relative">
+                                <button class="action my-p-2"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                                <div class="action-dropdown my-flex-column my-gap-2">
+                                    <button>Edit Details</button>
+                                    <button>All Order</button>
+                                    <button>Deposit Money</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Tanvir Ahmed</h6>
+                            </td>
+                            <td>
+                                <p>Mirpur Block A,</p>
+                                <p>Dhaka </p>
+                            </td>
+                            <td>
+                                0156623812382
+                            </td>
+                            <td>
+                                <p>23 Feb 2024 <span>12.2PM</span></p>
+                            </td>
+                            <td class="my-text-center my-p-relative">
+                                <button class="action my-p-2"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                                <div class="action-dropdown my-flex-column my-gap-2">
+                                    <button>Edit Details</button>
+                                    <button>All Order</button>
+                                    <button>Deposit Money</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+</div>

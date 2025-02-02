@@ -455,7 +455,7 @@ textarea::placeholder {
 
 .my-input-control input:focus,
 .my-input-control textarea:focus {
-    outline: 4px solid #0aad0a4d;
+    outline: 4px solid #3131323e;
     padding-left: 20px;
 }
 
@@ -619,10 +619,11 @@ textarea::placeholder {
     position: relative;
     max-width: fit-content;
     width: 100%;
+    min-width: 540px;
     max-height: 100dvh;
     overflow: auto;
     background-color: var(--white);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -670,10 +671,11 @@ textarea::placeholder {
 
 .my-modal .modal-close-btn {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 38px;
-    height: 36px;
+    right: 10px;
+    top: 10px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50% !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -684,6 +686,9 @@ textarea::placeholder {
     user-select: none;
     box-shadow: var(--shadow-3);
     border-radius: 2px;
+    background-color: #008000;
+    color: var(--white);
+
 }
 
 .my-modal .body-content {

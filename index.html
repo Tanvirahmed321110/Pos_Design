@@ -21,11 +21,18 @@
             <div class="header">
                 <div class="header-area my-flex-between my-align-center ">
 
-                    <!--______  Logo Here  ______-->
-                    <div class="logo">
-                        <a href="#">
-                            <h2 class="my-text-primary">LOGO</h2>
-                        </a>
+                    <div class="my-d-flex my-align-center my-gap-10">
+                        <!--______  Logo Here  ______-->
+                        <div class="logo">
+                            <a href="#">
+                                <h2 class="my-text-primary">LOGO</h2>
+                            </a>
+                        </div>
+                        <div class="my-d-flex-my-align-center my-gap-4 counter-btns">
+                            <button class="counter-btn my-p-3 my-px-4 my-fw-bold my-fs-md my-radius-sm"><i
+                                    class="fa-solid fa-circle-plus"></i></button>
+                            <button class="my-p-3 my-px-4 my-fw-bold my-fs-md my-radius-sm">001</button>
+                        </div>
                     </div>
 
 
@@ -794,9 +801,9 @@
         _____||    Modal For Three Dot    ||______
         __________________________________________
         -->
-        <div class="my-modal three-dot-modal" id="three-dot-modal">
+        <div class="my-modal three-dot-modal " id="three-dot-modal">
             <div class="modal-content ">
-                <button class="modal-close-btn my-primary-btn"><i class="fa-solid fa-xmark"></i></button>
+                <button class="modal-close-btn "><i class="fa-solid fa-xmark"></i></button>
                 <div class="my-py-3">
                     <h4>Action</h4>
                 </div>
@@ -827,13 +834,57 @@
         </div>
 
 
+
+
+
+
+
+        <!--______________________________________
+        _____||    Modal For Open Cash    ||______
+        __________________________________________
+                -->
+        <div class="my-modal open-cash-modal active" id="open-cash-modal">
+            <div class="modal-content ">
+                <button class="modal-close-btn "><i class="fa-solid fa-xmark"></i></button>
+                <div class="my-py-3">
+                    <h4>Openning Cash</h4>
+                </div>
+
+                <div class="my-mt-4">
+                    <p>Openning cash</p>
+                    <div class="my-input-control my-d-flex my-align-center my-gap-0">
+                        <input type="number" placeholder="Openning Cash">
+                        <span class="cash-icon my-p-2 my-bg-white-off"><i class="fa-solid fa-money-bill-1"></i></span>
+                    </div>
+
+                    <div class="my-mt-6">
+                        <div class="my-input-control">
+                            <textarea name="" id="" placeholder="Note"></textarea>
+                        </div>
+                        <div class="my-d-flex my-gap-2 my-align-center">
+                            <button class="my-btn my-primary-btn">Save</button>
+                            <button class="my-btn my-btn-outline">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
         <!--______________________________________
         _____||    Modal For Note    ||______
         __________________________________________
         -->
         <div class="my-modal note-modal " id="note-modal">
             <div class="modal-content">
-                <button class="modal-close-btn my-primary-btn"><i class="fa-solid fa-xmark"></i></button>
+                <button class="modal-close-btn "><i class="fa-solid fa-xmark"></i></button>
                 <div class="my-py-3">
                     <h4>Add Note</h4>
                 </div>
@@ -869,9 +920,9 @@
             _____||    Modal For Customers    ||______
             __________________________________________
         -->
-        <div class="my-modal customers-modal active" id="customers-modal">
+        <div class="my-modal customers-modal " id="customers-modal">
             <div class="modal-content big">
-                <button class="modal-close-btn my-primary-btn"><i class="fa-solid fa-xmark"></i></button>
+                <button class="modal-close-btn "><i class="fa-solid fa-xmark"></i></button>
                 <div class="my-py-2">
                     <h4>Customers List</h4>
 

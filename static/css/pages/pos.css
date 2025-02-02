@@ -3,7 +3,7 @@ ______||   Header Here   ||_______
 __________________________________*/
 .header {
     background-color: var(--white);
-    padding: 10px 20px;
+    padding: 10px 24px;
     height: 62px;
     box-shadow: var(--shadow-1);
     position: fixed;
@@ -22,6 +22,16 @@ __________________________________*/
     overflow: hidden;
 }
 
+.counter-btns button,
+.counter-btns .counter {
+    background-color: var(--border-color) !important;
+}
+
+.counter-btns button:hover,
+.counter-btns .counter:hover {
+    background-color: var(--border-color2) !important;
+    cursor: pointer;
+}
 
 /*______  Header Nav ______*/
 .header-nav i {
@@ -317,9 +327,16 @@ _______________________________*/
     color: var(--white);
 }
 
+/*_________ Open Cash Modal ________*/
+.open-cash-modal .modal-content {
+    padding: 20px;
+}
 
-
-
+.open-cash-modal .cash-icon {
+    padding: 8px;
+    font-size: 18px;
+    margin-left: -60px;
+}
 
 
 /*_________ Customers Modal ________*/
@@ -383,4 +400,9 @@ _______________________________*/
 .customers-modal .action-dropdown button {
     font-size: 13px;
     text-align: left;
+    padding: 2px 6px;
+}
+
+.customers-modal .action-dropdown button:hover {
+    background-color: var(--border-color);
 }
