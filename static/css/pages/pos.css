@@ -253,6 +253,21 @@ _______________________________*/
 .main-body .product {
     cursor: pointer;
     position: relative;
+    border: 1px dotted transparent;
+}
+
+.main-body .product:hover {
+    border: 1px dotted var(--primary-color);
+}
+
+.main-body .product .base {
+    font-size: 10px;
+}
+
+.main-body .product .base.new {
+    left: 8px;
+    top: 8px;
+    width: fit-content;
 }
 
 .main-body .product .qty {
@@ -405,4 +420,89 @@ _______________________________*/
 
 .customers-modal .action-dropdown button:hover {
     background-color: var(--border-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.payment-modal .modal-content {
+    width: 100%;
+    max-width: 100%;
+    height: 100dvh;
+    background-color: var(--border-color);
+}
+
+.payment-modal .modal-content .header {
+    background-color: var(--white);
+}
+
+.payment-right-sidebar {
+    position: fixed;
+    top: 63px;
+    right: 0;
+    height: calc(100dvh);
+    width: 450px;
+    background-color: var(--white);
+    padding: 10px 0;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.payment-right-sidebar .payment-option {
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+.payment-right-sidebar .payment-option:hover {
+    background-color: var(--border-color);
+}
+
+.payment-right-sidebar .calculator-total {
+    height: 420px;
+}
+
+.payment-right-sidebar .head-buttons button {
+    width: 50%;
+
+}
+
+.payment-right-sidebar .head-buttons input {
+    border-color: var(--secondary-color);
+}
+
+.payment-right-sidebar .bottom-btns .my-outline-btn {
+    background-color: var(--border-color) !important;
+    color: var(--secondary-color);
+}
+
+
+
+
+
+/* payment-modal-body */
+.payment-modal-body {
+    margin-top: 50px;
+    width: calc(100% - 460px);
+    height: calc(100dvh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.payment-modal-body .detiails {
+    width: 600px;
+    height: 500px;
+    text-align: center;
 }

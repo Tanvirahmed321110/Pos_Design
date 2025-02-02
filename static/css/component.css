@@ -657,11 +657,11 @@ textarea::placeholder {
     max-height: 2000px;
 }
 
-.my-modal .modal-content .header {
+/* .my-modal .modal-content .header {
     background-color: blueviolet;
     min-height: 80px;
     padding: 20px;
-}
+} */
 
 .my-modal .modal-content .footer {
     background-color: var(--white-off);

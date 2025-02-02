@@ -523,6 +523,9 @@ tr {
     color: var(--secondary-color);
 }
 
+.my-text-green {
+    color: var(--green);
+}
 
 /*______  Bg Color ______ */
 .my-bg-white {
@@ -551,6 +554,10 @@ tr {
 
 .my-bg-primary-hover {
     background-color: var(--primary-hover-color);
+}
+
+.my-bg-khaki {
+    background-color: khaki !important;
 }
 
 .my-bg-red {
