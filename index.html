@@ -1220,7 +1220,7 @@
         _____||    Modal For Payment    ||______
         ________________________________________
         -->
-        <div class="my-modal payment-modal active" id="modal-payment">
+        <div class="my-modal payment-modal " id="modal-payment">
             <div class="modal-content">
                 <!--_________________________________
                 _____||     Header Start     ||______
@@ -1383,6 +1383,182 @@
                                 <button class="payment-btn">Validation</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+
+
+                <!--______________________________________
+                _____||    Payment Modal Body     ||______
+                __________________________________________
+                -->
+                <div class="payment-modal-body">
+                    <div class="detiails">
+                        <h1><i class="fa-solid fa-bangladeshi-taka-sign"></i>1233.00</h1>
+
+                        <!-- when do not card select -->
+                        <div class="my-my-4 my-p-5 my-radius-sm my-bg-white">
+                            <h4 class="my-fw-medium">Please Select Card</h4>
+                        </div>
+
+                        <!-- when cart selected -->
+                        <div class="active my-my-4  my-border2 my-p-5 my-radius-sm my-bg-white my-flex-between">
+                            <h4 class="my-fw-medium">Cash</h4>
+                            <div class="my-d-flex my-align-center my-gap-10">
+                                <h4 class="my-fw-medium">
+                                    <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                    1500
+                                </h4>
+                                <button><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Return -->
+                        <div class="my-mt-5">
+                            <div class="my-pt-2 my-border-top my-flex-between">
+                                <h3 class="  my-fw-medium">Return</h3>
+                                <h3 class=""><span class="my-fs-lg"> <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i></span> 410</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!--________________________________________________
+        _____||    Modal For Payment Sucessfully    ||______
+        ____________________________________________________
+        -->
+        <div class="my-modal payment-modal-sucessfully  active " id="modal-payment-sucessfully">
+            <div class="modal-content">
+                <!--_________________________________
+                _____||     Header Start     ||______
+                _____________________________________
+                -->
+                <div class="header">
+                    <div class="header-area my-flex-between my-align-center ">
+
+                        <div class="my-d-flex my-align-center my-gap-10">
+                            <!--______  Logo Here  ______-->
+                            <div class="logo">
+                                <a href="#">
+                                    <h2 class="my-text-primary">LOGO</h2>
+                                </a>
+                            </div>
+                            <div class="my-d-flex-my-align-center my-gap-4 counter-btns">
+                                <button class="counter-btn my-p-3 my-px-4 my-fw-bold my-fs-md my-radius-sm"><i
+                                        class="fa-solid fa-circle-plus"></i></button>
+                                <button class="my-p-3 my-px-4 my-fw-bold my-fs-md my-radius-sm">001</button>
+                            </div>
+                        </div>
+
+
+                        <!--______  Header Medile Nav  ______-->
+                        <div class="header-nav my-flex-center my-gap-6">
+                            <div class=" my-p-3 my-p-relative">
+                                <div class="livenow">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <ul class="my-d-flex my-gap-7 my-align-center">
+                                <li>
+                                    <a class="my-flex-center my-gap-1 active header-nav-btn" href="#">
+                                        <span class="my-fs-md"><i class="fa-solid fa-border-all"></i></span>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="my-flex-center my-gap-1 header-nav-btn" href="#">
+                                        <span class="my-fs-md"><i class="fa-brands fa-shopify"></i></span>
+                                        Order List
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="my-flex-center my-gap-1 header-nav-btn" href="#">
+                                        <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+                                        History
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="my-flex-center my-gap-1 header-nav-btn" href="#">
+                                        <span><i class="fa-solid fa-money-check-dollar"></i></span>
+                                        Bills
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <!--______  Header Right Profile  ______-->
+                        <div class="profile-area my-d-flex my-align-center my-gap-3">
+                            <div class="my-flex-center">
+                                <!-- Notification Button -->
+                                <button class="round-nav-item my-p-relative">
+                                    <span><i class="fa-regular fa-bell"></i></span>
+
+                                    <div class="base-round active">2</div>
+                                </button>
+                            </div>
+                            <div>
+                                <!-- Profile Image -->
+                                <button>
+                                    <img class="profile-img-lg"
+                                        src="https://lh3.googleusercontent.com/ogw/AF2bZyjGF9eZ_ePPtRvCyenmjSX6lITjkOryD_rrDw7k5KkD7Jw=s32-c-mo"
+                                        alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--_________________________________
+                _____||     Left Sidebar     ||______
+                _____________________________________
+                -->
+                <div class="payment-right-sidebar">
+
+                    <div class="right-sidebar-wrapper my-flex-column my-gap-4">
+                        <div class="my-card sucessfully-message my-flex-column my-align-center my-gap-2">
+                            <span class="my-fs-xxl"><i class="fa-solid fa-circle-check"></i></span>
+                            <div>
+                                <h4>Payment Sucessfull</h4>
+                                <div class="my-flex-center my-gap-2 my-mt-3">
+                                    <div class="my-fw-bold my-fs-lg">
+                                        <span><i class="fa-solid fa-bangladeshi-taka-sign"></i></span>1200
+                                    </div>
+                                    <button class="edit-payment">Edit Payment</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <!-- Print full Recieve -->
+                            <button class="print-full-recieve my-w-100">
+                                <span><i class="fa-solid fa-print"></i></span>
+                                Print Full Receipt
+                            </button>
+                        </div>
+
+                        <div>
+                            <form action="#" class="email-send">
+                                <input type="email" placeholder="Email">
+                                <button><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="my-w-100">
+                        <button class="new-order-btn my-fw-bold my-fs-lg">New Order</button>
                     </div>
                 </div>
 
